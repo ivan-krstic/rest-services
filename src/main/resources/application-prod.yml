@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 3600
+
+spring:
+  application:
+    name: rest-services
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.hibernate: warn
+    
+project:
+  external-rest-service:
+    json-placeholder: https://jsonplaceholder.typicode.com
